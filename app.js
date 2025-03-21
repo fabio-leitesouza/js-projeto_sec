@@ -1,9 +1,3 @@
-// let titulo = document.querySelector('h1');
-// titulo.innerHTML = 'Jogo de adivinhação';
-
-// let subtitulo = document.querySelector('p');
-// subtitulo.innerHTML = 'Escolha um número entre 1 e 100';
-
 exibirTextoNaTela('h1', 'Jogo de adivinhação');
 exibirTextoNaTela('p', 'Escolha um número entre 1 e 100');
 
@@ -11,7 +5,6 @@ function gerarNumeroAleatorio() {
     return parseInt(Math.random() * 10) + 1;
 }
 
-// let numeroSecreto = 5;
 let numeroSecreto = gerarNumeroAleatorio();
 console.log(numeroSecreto);
 
@@ -30,6 +23,3 @@ function verificarChute() {
         exibirTextoNaTela('h1', 'Errou! O número secreto é maior.');
     }
 }
-
-//<h1>Jogo de adivinhação</h1>
-//<p>Escolha um número entre 1 e 100</p>
