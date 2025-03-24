@@ -13,6 +13,8 @@ function exibirTextoNaTela(tag, texto) {
     campo.innerHTML = texto;
 }
 let tentativas = 3;
+
+
 function verificarChute() {
     let chute = parseInt(document.querySelector('input').value);
     if(tentativas === 0) {
