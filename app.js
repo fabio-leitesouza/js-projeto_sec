@@ -31,5 +31,8 @@ function verificarChute() {
             exibirTextoNaTela('p', `Errou! O número secreto é maior. Você ainda tem ${tentativas} ${palavraTentativa}.`);
         }
     }
-    
+}
+
+function limparCampo() {
+    document.querySelector('input').value = '';
 }
