@@ -32,7 +32,3 @@ function verificarChute() {
         }
     }
 }
-
-function limparCampo() {
-    document.querySelector('input').value = '';
-}
