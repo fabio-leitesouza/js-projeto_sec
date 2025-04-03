@@ -14,7 +14,6 @@ function exibirTextoNaTela(tag, texto) {
 }
 let tentativas = 3;
 
-
 function verificarChute() {
     let chute = parseInt(document.querySelector('input').value);
     if(tentativas === 0) {
@@ -31,4 +30,17 @@ function verificarChute() {
             exibirTextoNaTela('p', `Errou! O número secreto é maior. Você ainda tem ${tentativas} ${palavraTentativa}.`);
         }
     }
+}
+
+function limparCampo() {
+    document.querySelector('input').value = '';
+}
+
+function reiniciarJogo() {
+    tentativas = 3;
+    numeroSecreto = gerarNumeroAleatorio();
+    console.log(numeroSecreto);
+    exibirTextoNaTela('h1', 'Jogo de adivinhação');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 e 100');
+    limparCampo();
 }
