@@ -32,10 +32,12 @@ function verificarChute() {
     }
 }
 
+// Limpar o campo de entrada
 function limparCampo() {
     document.querySelector('input').value = '';
 }
 
+// Reiniciar o jogo
 function reiniciarJogo() {
     tentativas = 3;
     numeroSecreto = gerarNumeroAleatorio();
