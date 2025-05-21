@@ -1,3 +1,4 @@
+
 // Escalada da Lógica de Programação com JavaScript
 
 // 1. Introdução à Lógica de Programação
@@ -73,7 +74,11 @@ if (nota >= 6) {
 }
 
 // Exercício: Peça uma idade e verifique se a pessoa é maior de idade.
-  
+// Exercício 2: Peça um número e verifique se ele é par ou ímpar.
+// Exercício 3: Peça um número e verifique se ele é positivo, negativo ou zero.
+// Exercício 4: Peça um número e verifique se ele é múltiplo de 3 ou 5.
+// Exercício 5: Peça um número e verifique se ele está entre 1 e 10.  
+
 // 6. Estruturas de Repetição (Loops)
 /*
 Repetem ações:
@@ -83,6 +88,11 @@ Repetem ações:
 for (let i = 1; i <= 5; i++) {
   console.log("Repetição:", i);
 }
+// Exercício: Mostre os números de 1 a 5 usando for.
+// Exercício 2: Mostre os números de 1 a 5 usando while.
+// Exercício 3: Crie um loop que some os números de 1 a 10 e mostre o resultado.
+// Exercício 4: Crie um loop que some os números de 1 a 100 e mostre o resultado.
+// Exercício 5: Crie um loop que some os números de 1 a 1000 e mostre o resultado.
 
 let contador = 0;
 while (contador < 3) {
@@ -90,7 +100,10 @@ while (contador < 3) {
   contador++;
 }
 
+
 // Exercício: Mostre os números pares de 0 a 10 usando for.
+// Exercício 2: Mostre os números ímpares de 0 a 10 usando while.
+// Exercício 3: Crie um loop que some os números de 1 a 100 e mostre o resultado.
 
 // 6.1 For com Arrays
 /*
@@ -113,6 +126,10 @@ function saudacao(nome) {
 console.log(saudacao("Maria"));
 
 // Exercício: Crie uma função que receba dois números e retorne a soma.
+
+function somar(a, b) {
+  return a + b;
+}
 
 // 7.1 Funções Arrow (Arrow Functions)
 /*
@@ -140,6 +157,54 @@ const saudacaoCompleta = (nome, hora) => {
 console.log(saudacaoCompleta("Joana", 10));
 
 // Exercício: Crie uma função arrow que receba um número e diga se ele é par ou ímpar.
+
+const parOuImpar = numero => {
+  return numero % 2 === 0 ? "Par" : "Ímpar";
+}
+
+const parOuImpar = numero => {
+  if (numero % 2 === 0) {
+    return "Par";
+  } else {
+    return "Ímpar";
+  }
+}
+
+// Exercício 2: Crie uma função arrow que receba um número e retorne o dobro dele.
+// Exercício 3: Crie uma função arrow que receba um número e retorne o quadrado dele.
+// Exercício 4: Crie uma função arrow que receba um número e retorne o fatorial dele.
+const fatorial = num => {
+  if (num === 0 || num === 1) {
+    return 1;
+  }
+  let resultado = 1;
+  for (let i = num; i > 1; i--) {
+    resultado *= i;
+  }
+  return resultado;
+  
+}
+// Exercício 5: Crie uma função arrow que receba um número e retorne a soma de todos os números de 1 até ele.
+const somaTodos = num => {
+  resultado = 0
+  for(let i = 1; i <= num; i++){
+    resultado = resultado + i;
+  }
+  return resultado;
+}
+console.log(somaTodos(5));
+
+// Exercício 6: Crie uma função arrow que receba um número e retorne a soma de todos os números pares de 1 até ele.
+const somaTodosPares = num => {
+  resultado = 0
+  for(let i = 1; i <= num; i++){
+    if(i % 2 === 0){
+      resultado = resultado + i;
+    }    
+  }
+  return resultado;
+}
+console.log(somaTodosPares(5));
 
 // 8. Estruturas de Dados
 
