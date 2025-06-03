@@ -54,6 +54,7 @@ Operadores permitem executar operações entre valores:
 - Aritméticos: +, -, *, /, %, **
 - Relacionais: >, <, >=, <=, ==, !=, ===
 - Lógicos: && (e), || (ou), ! (negação)
+
 */
 let soma = 10 + 5;
 let comparacao = 10 > 5;
