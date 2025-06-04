@@ -132,6 +132,8 @@ function somar(a, b) {
   return a + b;
 }
 
+let somando = somar(5, 7)
+
 // 7.1 Funções Arrow (Arrow Functions)
 /*
 Arrow functions são uma forma mais curta de escrever funções anônimas. Elas são úteis em funções simples e em métodos de array.
@@ -171,9 +173,12 @@ const parOuImpar = numero => {
   }
 }
 
-// Exercício 2: Crie uma função arrow que receba um número e retorne o dobro dele.
-// Exercício 3: Crie uma função arrow que receba um número e retorne o quadrado dele.
-// Exercício 4: Crie uma função arrow que receba um número e retorne o fatorial dele.
+//Exercício 2: Crie uma função arrow que receba um número e retorne o dobro dele.
+const dobrar = numero => numero * 2;
+//Exercício 3: Crie uma função arrow que receba um número e retorne o quadrado dele.
+const quadrado = numero => numero * numero;
+
+//Exercício 4: Crie uma função arrow que receba um número e retorne o fatorial dele.
 const fatorial = num => {
   if (num === 0 || num === 1) {
     return 1;
