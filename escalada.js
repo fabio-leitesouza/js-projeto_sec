@@ -187,9 +187,10 @@ const fatorial = num => {
   for (let i = num; i > 1; i--) {
     resultado *= i;
   }
-  return resultado;
-  
+  return resultado;  
 }
+
+fatorial(4)
 // Exercício 5: Crie uma função arrow que receba um número e retorne a soma de todos os números de 1 até ele.
 const somaTodos = num => {
   resultado = 0
@@ -227,10 +228,19 @@ console.log(cores[1]);
 /*
 Objetos armazenam dados como pares chave-valor.
 */
-let pessoa = { nome: "Ana", idade: 30 };
+let pessoa = { 
+  nome: "Ana", 
+  idade: 30 
+};
 console.log(pessoa.nome);
 
 // Exercício: Crie um objeto com as propriedades nome, idade e hobby.
+let fabio = { 
+  nome: "Fabio", 
+  idade: 40,
+  hobby: "Assistir filme"
+}
+console.log(fabio)
 
 // 9. Trabalhando com Strings
 /*
@@ -245,6 +255,12 @@ console.log(frase.toUpperCase());
 console.log(frase.includes("divertido"))
 
 // Exercício: Peça uma frase e verifique se ela contém a palavra "JS".
+// 
+
+let fraseJS = "É muito importante aprender JS se você quer trabalhar com web";
+if(fraseJS.includes("JS")){
+  console.log("Estou aprendendo JS")
+}
 
 // 10. Módulos e Bibliotecas (ex: Math)
 /*
@@ -254,6 +270,8 @@ Bibliotecas como Math oferecem utilitários prontos:
 */
 console.log(Math.sqrt(16));
 console.log(Math.random());
+
+
 
 // Exercício: Gere um número aleatório de 1 a 100.
 
