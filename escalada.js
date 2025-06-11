@@ -255,7 +255,11 @@ console.log(frase.toUpperCase());
 console.log(frase.includes("divertido"))
 
 // Exercício: Peça uma frase e verifique se ela contém a palavra "JS".
-// 
+// Exercício 02: Peça uma frase e transforme todas as letras em maiúsculas.
+// Exercício 03: Peça uma frase e mostre o tamanho dela.
+// Exercício 04: Peça uma frase e verifique se ela começa com "Olá".
+// Exercício 05: Peça uma frase e retorne o primeiro e o último caracteres.
+
 
 let fraseJS = "É muito importante aprender JS se você quer trabalhar com web";
 if(fraseJS.includes("JS")){
