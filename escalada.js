@@ -165,7 +165,7 @@ const parOuImpar = numero => {
   return numero % 2 === 0 ? "Par" : "Ímpar";
 }
 
-const parOuImpar = numero => {
+const parOuImpar2 = numero => {
   if (numero % 2 === 0) {
     return "Par";
   } else {
