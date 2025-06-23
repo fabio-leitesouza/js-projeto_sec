@@ -258,6 +258,11 @@ console.log(frase.includes("divertido"))
 // Exercício 02: Peça uma frase e transforme todas as letras em maiúsculas.
 // Exercício 03: Peça uma frase e mostre o tamanho dela.
 // Exercício 04: Peça uma frase e verifique se ela começa com "Olá".
+frase = prompt("Digite uma frase: ");
+if(frase.toUpperCase().startsWith("OLÁ")){	
+  console.log("A frase começa com 'Olá'");
+}
+
 // Exercício 05: Peça uma frase e retorne o primeiro e o último caracteres.
 
 
@@ -276,7 +281,6 @@ console.log(Math.sqrt(16));
 console.log(Math.random());
 
 
-
 // Exercício: Gere um número aleatório de 1 a 100.
 
 // 11. Tratamento de Erros
@@ -289,8 +293,8 @@ try {
 } catch (erro) {
   console.log("Erro detectado:", erro);
 }
-
-// Exercício: Crie um código que tente dividir um número por outro e trate divisão por zero.
+// Exercício: Crie um código que tente dividir um número por outro e trate divisão por zero.  
+// Exercício 2: Crie um código que tente acessar uma propriedade inexistente de um objeto e trate o erro.
 
 // 12. Introdução à Orientação a Objetos
 /*
@@ -352,3 +356,34 @@ console.log("Soma total:", somaTotal);
 // 14.7 Desafio: Crie um programa que peça ao usuário seu nome e idade, e mostre uma mensagem personalizada. Depois, crie um array de números e faça operações com map, filter e reduce.
 
 //Atividade Final: Crie um programa que peça ao usuário seu nome e idade, e mostre uma mensagem personalizada. Depois, crie um array de números e faça operações com map, filter e reduce.
+
+//Crie uma função contarVogais(frase) que receba a frase como parâmetro e retorne o número de vogais (a, e, i, o, u, ignorando maiúsculas/minúsculas). Exiba o resultado.
+function contarVogais(frase) {
+  const vogais = "aeiouAEIOU";
+  let contador = 0;
+  
+  for (let i = 0; i < frase.length; i++) {
+    if (vogais.includes(frase[i])) {
+      contador++;
+    }
+    
+  }
+  
+  return contador;
+}
+
+//Calcule a média das notas utilizando o método reduce() e exiba-a. Arredonde a média para duas casas decimais.
+const notas = [7.5, 8.0, 6.5, 9.0];
+const media = notas.reduce((acc, nota) => acc + nota, 0) / notas.length;
+console.log("Média:", media.toFixed(2));
+
+
+//Crie uma função verificarPrimo(numero) que receba um número inteiro como parâmetro e retorne true se o número for primo, e false caso contrário. Um número primo é aquele que é divisível apenas por 1 e por ele mesmo. Dica:1 Você pode usar um loop for que vai de 2 até a raiz quadrada do número para verificar divisibilidade.
+
+function verificarPrimo(numero) {
+  if (numero <= 1) return false; // Números menores ou iguais a 1 não são primos
+  for (let i = 2; i <= Math.sqrt(numero); i++) {
+    if (numero % i === 0) return false; // Se for divisível por algum número, não é primo
+  }
+  return true; // Se não encontrou divisores, é primo
+}
