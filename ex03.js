@@ -50,3 +50,5 @@ while (numero !== 0) {
     numero = parseInt(prompt("Digite um número diferente de zero (0 para sair):"));
 }
 
+//
+
